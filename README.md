@@ -1,10 +1,20 @@
-# electricity_price_forecasting
-This is the repository for the code, datasets, etc. created for my MSc dissertation on electricity price forecasting using time series methods and various statistical learning algorithms found in the current academic literature on electricity price forecasting, including random forests, AR/ARX, SARIMA/SARIMAX, neural networks, and the more novel X-Model (Ziel and Steinert - https://www.sciencedirect.com/science/article/pii/S0140988316302080).
+# Electricity Price Forecasting:
+### Applying Statistical and Machine Learning Methods to the Irish Day-Ahead Electricity Market in a Supervised Learning Framework
 
+## Abstract:
+Accurate electricity price forecasting has become a substantial requirement since the liberalisation of the electricity markets, which has created a more competitive system of electricity generation and distribution. For example, electricity prices in the day-ahead market (DAM) are considered by energy traders when making decisions. However, electricity prices display characteristics that are difficult from a modelling perspective, including heteroscedasticity (non-constant variance), sharp price spikes and several levels of seasonality.
 
-### Directory Tree:
+In this paper, we present some of the methodologies in the current wealth of literature on electricity price forecasting, with the aim of forecasting electricity spot prices in the Irish DAM. More specifically, we use methods in time series and machine learning to forecast prices for all 24 hours of each DAM auction operated by the Single Electricity Market Operator (SEMO).
+
+First, we give a brief overview of the electricity market and its operation as far as it relates to our goal of price forecasting in the DAM. Secondly, some important information is given about the data used for this project. Thirdly, we give a short explanation of each model that was used and then provide details on how each one was structured and prepared for the modelling task. Then, most importantly, we present results on the performance of each model relative to a benchmark and a brief note on the importance of predictors. Finally, we give conclusions based on the results and note some areas for further development.
+
+## GitHub Description:
+This is the repository for the code, datasets, etc. created for my MSc dissertation on electricity price forecasting. The paper is found in Electricity_Price_Forecasting.pdf. The file "Method Evaluation.ipynb" contains the codes used to run the walk-forward validation (as outlined in Section 4.1 and defined in packages\\tools.py) for all the models (outlined in Section 3 and defined in packages\\models.py).
+
+The Datasets directory contains all datasets used in the project. The Figures directory contains all plots and tables used in Electricity_Price_Forecasting.pdf. The Results directory contains the walk-forward validation results for analysis. The Variables directory is an optional directory contianing the large files (X-Model) that would take several minutes to build from scratch.
+
+## Directory Tree:
 ```
-
 │   Electricity_Price_Forecasting.pdf
 │   Method Evaluation.ipynb
 │   README.md
