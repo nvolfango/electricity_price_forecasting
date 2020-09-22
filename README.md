@@ -8,7 +8,7 @@ In this paper, we present some of the methodologies in the current wealth of lit
 
 First, we give a brief overview of the electricity market and its operation as far as it relates to our goal of price forecasting in the DAM. Secondly, some important information is given about the data used for this project. Thirdly, we give a short explanation of each model that was used and then provide details on how each one was structured and prepared for the modelling task. Then, most importantly, we present results on the performance of each model relative to a benchmark and a brief note on the importance of predictors. Finally, we give conclusions based on the results and note some areas for further development.
 
-## GitHub Description:
+## GitHub Repository Description:
 This is the repository for the code, datasets, etc. created for my MSc dissertation on electricity price forecasting. The paper is found in Electricity_Price_Forecasting.pdf. The file "Method Evaluation.ipynb" contains the codes used to run the walk-forward validation (as outlined in Section 4.1 and defined in packages\\tools.py) for all the models (outlined in Section 3 and defined in packages\\models.py).
 
 The Datasets directory contains all datasets used in the project. The Figures directory contains all plots and tables used in Electricity_Price_Forecasting.pdf. The Results directory contains the walk-forward validation results for analysis. The Variables directory is an optional directory contianing the large files (X-Model) that would take several minutes to build from scratch.
